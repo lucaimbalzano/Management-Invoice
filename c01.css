@@ -1,0 +1,64 @@
+body {
+    font-family: helvetica, arial, sans-serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    min-height: 100%;}
+h1{
+
+  font-family: 'Alex Brush';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Alex Brush Regular'), local('AlexBrush-Regular');
+}
+#menu{
+  background: url('../img/menu.png');
+  box-shadow: 5px 10px;
+  width:200px;
+  height: 200px;
+}
+
+#signin{
+  background: url('../img/img_2.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+   input[type=submit],input[type=text],input[type=password],input[type=email] {
+	background: linear-gradient(to right,#d1d0d1, #0c2924);
+	color: white;
+	--width: 150px;
+	--height: calc(var(--width) / 3); /*replacement for length value*/
+	width: var(--width);
+	height: var(--height);
+	text-align: center;
+	line-height: var(--height);
+	font-size: calc(var(--height) / 2.5);
+	font-family: sans-serif;
+	letter-spacing: 0.2em;
+	border: 1px solid darkgoldenrod;
+	border-radius: 2em;
+	transform: perspective(500px) rotateY(-15deg);/*perspective property determine the distance between the z=0, z>0 3D-element =larger , z<0 3D-element =smaller*/
+	text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: 2px 0 0 5px rgba(0, 0, 0, 0.2);
+	transition: 0.5s;
+	position: relative;
+	overflow: hidden; /*it is clipped, and the rest of the content will be invisible*/
+}
+
+input[type=submit]:hover {
+	transform: perspective(500px) rotateY(15deg);
+	text-shadow: -6px 3px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: -2px 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
